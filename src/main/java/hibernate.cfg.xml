@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+	    <property name="show_sql">true</property>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="hibernate.connection.password">bondstone</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/sakila</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+        <property name="hibernate.search.autoregister_listeners">false</property>
+        <property name="hibernate.validator.apply_to_ddl">false</property>
+        <mapping class="com.cooksys.spring.hibernate.db.model.Actor" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.FilmCategory" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.FilmList" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.StaffList" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Country" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.FilmActor" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Rental" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Store" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.City" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.NicerButSlowerFilmList" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.SalesByFilmCategory" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.SalesByStore" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.ActorInfo" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Staff" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Inventory" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Category" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Film" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Customer" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.CustomerList" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Address" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Payment" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.Language" />
+        <mapping class="com.cooksys.spring.hibernate.db.model.FilmText" />
+    </session-factory>
+</hibernate-configuration>
